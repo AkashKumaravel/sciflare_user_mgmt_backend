@@ -1,6 +1,6 @@
-#To install all dependencies
+##To install all dependencies
 npm install
 
-#To Run this app
+##To Run this app
 npm start
 
