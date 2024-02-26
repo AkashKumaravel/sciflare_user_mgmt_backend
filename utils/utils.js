@@ -74,7 +74,7 @@ const generateJwtToken = async (userDetails) => {
     account_id: userDetails['account_id'],
     email: userDetails['email'],
   };
-  const privateKey = process.env.JWT_SECRET_KEY || ''
+  const privateKey = process.env.JWT_SECRET_KEY || 'secret_pass_key'
   const token = await jwt.sign(tokenPayload, privateKey);
   return token;
 };
